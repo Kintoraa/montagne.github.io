@@ -1,0 +1,46 @@
+nav {
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #ffffff3b;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    ul {
+     @include center;
+     padding-left: 0;
+     width: 100%;
+         
+    }
+
+    .nav_left {
+        width: 40%;
+
+
+        li {
+            @include center;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            font-weight: 900;
+            height: 100%;
+            padding: 0 10px;
+            transition: 1s;
+
+            &:hover {
+                background: white;
+            
+            }
+        }
+
+
+    }
+
+    .nav_right {
+        width: 20%;
+        justify-content: space-around;
+    }
+    
+}

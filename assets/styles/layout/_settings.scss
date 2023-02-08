@@ -7,3 +7,47 @@
     font-family: 'font2';
     src: url(../../fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
+
+$font1: font1, sans-serif; 
+$font2: font2, sans-serif;
+$color1: white;
+$color2: black;
+$color3: gray; 
+
+
+@mixin center {
+    display: flex;
+    align-items: center;
+
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font1;
+}
+
+body{
+    text-align: center;
+    padding: 70px 150px 150px 150px;
+    background: url(../image/bg.jpg) center/cover fixed;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buttons{
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
