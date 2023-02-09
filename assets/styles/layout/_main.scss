@@ -1,7 +1,65 @@
-.header {
+.main {
+    background: $color1;
+    height: 1300px;
+    @include width;
+    padding: 50px;
+
+
+.date_main {
+    position: relative;
+   p {
+    font-size: 1.1rem;
+
+   }
+
+   &::before {
+    content: "";
+    position: absolute;
+    background: $color3;
+    width: 35%;
+    height: 1px;
+    left: 5%;
+    
+    top: 50%;
     
 
+   }
+
+   &::after {
+    content: "";
+    position: absolute;
+    background: $color3;
+    width: 35%;
+    height: 1px;
+    right: 5%;
+    bottom: 50%;
+
+   }
+}
+
+.header_main {
+    margin: 40px;  
+ h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+ }
+
+ p {
+    max-width: 50%;
+    margin: 30px auto;
+    letter-spacing: 1px;
+    font-style: italic;
+ }
+
+}
+
+.main_img {
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 40px;
     img {
-        width: 200px;
+     width: 100%;
     }
+}
+
 }

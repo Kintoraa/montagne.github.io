@@ -1,24 +1,30 @@
 @font-face {
     font-family: 'font1';
-    src: url(../../fonts/Merriweather-Regular.ttf);
+    src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
 @font-face {
     font-family: 'font2';
-    src: url(../../fonts/Inter-VariableFont_slnt\,wght.ttf);
+    src: url(/assets/fonts/Merriweather-Regular.ttf);
 }
 
 $font1: font1, sans-serif; 
 $font2: font2, sans-serif;
 $color1: white;
 $color2: black;
-$color3: gray; 
+$color3: #E9E9E9; 
+$color4 : #696969;
 
 
 @mixin center {
     display: flex;
     align-items: center;
 
+}
+
+@mixin width {
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 * {
@@ -43,11 +49,28 @@ li {
     cursor: pointer;
 }
 
+p{
+    line-height: 40px;
+}
+
 .buttons{
     background: transparent;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 800;
     padding: 10px 30px;
     letter-spacing: 2px;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    border: solid 2px;
+    transition: 0.5s;
+
+    &:hover {
+        background: $color3;
+
+    }
 }
+
+.article_left, .footer_left {
+    border-right:  solid $color3 1px;
+    
+}
+

@@ -1,6 +1,5 @@
 nav {
-    max-width: 1500px;
-    margin: 0 auto;
+    @include width;
     background: #ffffff3b;
 
     div {
@@ -30,7 +29,7 @@ nav {
             transition: 1s;
 
             &:hover {
-                background: white;
+                background: $color3;
             
             }
         }
@@ -41,6 +40,14 @@ nav {
     .nav_right {
         width: 20%;
         justify-content: space-around;
+
+        li{
+            transition: 0.5s;
+            &:hover {
+                font-size: 1.4rem;
+            }
+          
+        }
     }
     
 }

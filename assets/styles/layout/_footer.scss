@@ -1,0 +1,135 @@
+footer {
+    @include width;
+    color: $color4;
+
+    label, h6 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.8rem; 
+    }
+
+    .footer_container {
+        @include center;
+        background: $color1;
+        margin-top: 40px;
+    }
+
+
+    .footer_left, .footer_right {
+        width: 50%;
+    }
+
+    .footer_left {
+        padding: 50px;
+    }
+
+    .form_grid {
+        display: grid;
+        grid-template-areas: 
+        "na na"
+        "em  em"
+        "area area"
+        "but void";
+        gap: 30px;  
+        text-align: left;
+        align-items: center;
+
+        .name {
+            grid-area: na;
+        }
+
+        .email {
+            grid-area: em;
+        }
+
+        .textarea {
+            grid-area: area;    
+        }
+
+        .buttons {
+            grid-area: but;
+            justify-content: center;
+            color: $color4;
+            width: 200px;
+
+            
+        }
+         
+        input, textarea {
+            border-radius: 5px;
+            border: solid 1px $color4;
+            background: white;
+        }
+
+        input[type="text"]{
+            width: 100%;
+            margin-top: 20px;
+            height: 50px;
+
+
+        }
+
+        textarea {
+            width: 100%;
+            resize: none;
+            height: 200px; 
+            margin: 20px auto; 
+        
+
+    }
+    
+    }
+
+    .footer_right {
+        display: flex;
+        flex-direction: column;
+
+        h6:first-child {
+            margin-bottom: 20px;
+        }
+
+        div:nth-child(4){
+            border-bottom: none; 
+        }
+
+        .footer_right_container {
+            @include center;
+            height: 165px;
+            border-bottom: solid $color3 1px; ;
+            padding: 20px 20px 20px 40px;
+            justify-content: flex-start;
+
+        div {
+           width: 50%;
+           margin: 0 auto;
+           text-align: left;
+           
+
+            p{
+                font-size: 0.9rem;
+                line-height: 25px;
+                font-weight: 500;
+                color : #696969c7;
+            }
+        }
+
+
+        ul {
+            @include center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0;
+
+            li {
+                border: solid $color3 1px;
+                padding: 10px;
+                border-radius: 30px;
+                color: $color2;
+                
+        }
+    
+    }
+}
+
+    }
+}

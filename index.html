@@ -40,12 +40,11 @@
         </div>
     </nav>
 
-    <div class="date">
-        <p>April 25, 2017</p>
-    </div>
-
     <section class="main">
-        <div>
+        <div class="date_main">
+            <p>April 25, 2017</p>
+        </div>
+        <div class="header_main">
             <h2>And this is a <br> massive headline</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa repellendus sed explicabo tempora
                 ratione quo illum quis beatae fugiat voluptate quidem, dicta a, at rerum, est fugit odit saepe!</p>
@@ -61,72 +60,89 @@
         <div class="article_left">
             <p>April 24, 2017</p>
             <h3>Sed Magna <br> Ipsum faucibus</h3>
-            <div class="img_left">
+            <div>
                 <img src="./assets/image/pic02.jpg" alt="Image de la foret dans la montagne">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis cumque quod fuga numquam
+                    libero aliquam ex ducimus enim consectetur!</p>
             </div>
+
             <button class="buttons">Full story</button>
         </div>
 
         <div class="article_right">
             <p>April 22, 2017</p>
             <h3>Primis eget <br>imperdiet lorem</h3>
-            <div class="img_right">
+            <div>
                 <img src="./assets/image/pic03.jpg" alt="Image de deux personne en haut de la montagne">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad est voluptatibus sit accusantium
+                    perferendis maxime iste esse facere dolore magnam? </p>
             </div>
             <button class="buttons">Full story</button>
         </div>
     </section>
 
     <footer>
-        <div class="footer_left">
-            <form method="post" action="#">
-                <div class="form_grid">
-                    <div class="">
-                        <label for="name">Name</label>
-                        <input type="text" id="name">
+        <div class="footer_container">
+            <div class="footer_left">
+                <form method="post" action="#">
+                    <div class="form_grid">
+                        <div class="name">
+                            <label for="name">Name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="textarea">
+                            <label for="msg">Message</label>
+                            <textarea id="msg"></textarea>
+                        </div>
+                        <input type="submit" class="buttons" value="Send message">
                     </div>
+
+
+
+                </form>
+            </div>
+
+            <div class="footer_right">
+                <div class="footer_right_container">
+                    <h6>Adress</h6>
                     <div>
-                        <label for="email">Email</label>
-                        <input type="text" id="email">
-                    </div>
-                    <div>
-                        <label for="msg">Message</label>
-                        <textarea id="msg"></textarea>
+                        <p>134 Somewhere Road #87257</p>
+                        <p>Nashville, TN 00000-0000</p>
                     </div>
                 </div>
-                <input type="button" class="buttons" value="Send message">
+                <div class="footer_right_container">
+                    <h6>Phone</h6>
+                    <div>
+                        <p>(000) 000-000</p>
+                    </div>
 
-            </form>
+                </div>
+                <div class="footer_right_container">
+                    <h6>Email</h6>
+                    <div>
+                        <p>info@untitled.ltd</p>
+                    </div>
+
+                </div>
+                <div class="footer_right_container">
+                    <h6>Social</h6>
+                    <div>
+                        <ul>
+                            <li> <i class="fa-brands fa-twitter"></i> </li>
+                            <li> <i class="fa-brands fa-facebook"></i> </li>
+                            <li> <i class="fa-brands fa-instagram"></i> </li>
+                            <li> <i class="fa-brands fa-github"></i> </li>
+                    </div>
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
-
-        <div class="footer_right">
-            <div>
-                <h6>Adress</h6>
-                <p>134 Somewhere Road #87257 Nashville, TN 00000-0000</p>
-            </div>
-            <div>
-                <h6>Phone</h6>
-                <p>(000) 000-000</p>
-
-            </div>
-            <div>
-                <h6>Email</h6>
-                <p>info@untitled.ltd</p>
-
-            </div>
-            <div>
-                <h6>Social</h6>
-                <ul>
-
-                    <li> <i class="fa-brands fa-twitter"></i> </li>
-                    <li> <i class="fa-brands fa-facebook"></i> </li>
-                    <li> <i class="fa-brands fa-instagram"></i> </li>
-                    <li> <i class="fa-brands fa-github"></i> </li>
-
-                </ul>
-            </div>
-        </div>
-
     </footer>
 
 </body>
