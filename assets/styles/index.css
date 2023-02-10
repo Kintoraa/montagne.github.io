@@ -83,6 +83,7 @@ nav {
   max-width: 1500px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.231372549);
+  color: white;
 }
 nav div {
   display: flex;
@@ -104,13 +105,14 @@ nav ul {
   align-items: center;
   font-size: 0.7rem;
   letter-spacing: 1px;
-  font-weight: 900;
+  font-weight: 700;
   height: 100%;
   padding: 0 10px;
   transition: 1s;
 }
 .nav_left li:hover {
   background: #E9E9E9;
+  color: black;
 }
 
 .nav_right {
