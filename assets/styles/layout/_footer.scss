@@ -8,6 +8,8 @@ footer {
         font-size: 0.8rem; 
     }
 
+}
+
     .footer_container {
         @include center;
         background: $color1;
@@ -17,6 +19,7 @@ footer {
 
     .footer_left, .footer_right {
         width: 50%;
+        height: 675px;
     }
 
     .footer_left {
@@ -50,14 +53,13 @@ footer {
             grid-area: but;
             justify-content: center;
             color: $color4;
-            width: 200px;
 
             
         }
          
-        input, textarea {
+        input[type="text"], textarea {
             border-radius: 5px;
-            border: solid 1px $color4;
+            border: solid 1px $color3;
             background: white;
         }
 
@@ -66,7 +68,11 @@ footer {
             margin-top: 20px;
             height: 50px;
 
+        }
 
+        input[type="submit"] {
+            padding: 10px 0;
+            width: 200px;
         }
 
         textarea {
@@ -84,9 +90,6 @@ footer {
         display: flex;
         flex-direction: column;
 
-        h6:first-child {
-            margin-bottom: 20px;
-        }
 
         div:nth-child(4){
             border-bottom: none; 
@@ -98,6 +101,11 @@ footer {
             border-bottom: solid $color3 1px; ;
             padding: 20px 20px 20px 40px;
             justify-content: flex-start;
+
+
+            #adress {
+                margin-bottom: 20px;
+            }
 
         div {
            width: 50%;
@@ -117,6 +125,7 @@ footer {
         ul {
             @include center;
             justify-content: space-between;
+            flex-wrap: wrap;
             width: 100%;
             padding: 0;
 
@@ -132,4 +141,3 @@ footer {
 }
 
     }
-}

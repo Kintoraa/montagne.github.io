@@ -1,0 +1,100 @@
+@media screen and (max-width : 1300px) {
+
+    .header_main p{
+    max-width: 90%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+
+    body {
+        padding: 70px;
+    }
+  
+    .date_main::before, .date_main::after {
+        width: 25%;
+    }
+}
+
+
+@media screen and (max-width: 710px) {
+    
+    body {
+        padding: 50px;
+    }
+
+    .header_container h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav_left {
+        width: 100%;
+        justify-content: space-around;
+
+        li {
+            padding: 0 35px;
+        }
+    }
+    .nav_right  {
+        display: none;
+    }
+
+    .main {
+        padding: 20px;
+        height: 1100px;
+    }
+
+    .header_main {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .article  {
+        display: block;
+    }
+
+    .article_left, .article_right {
+        width: 100%;
+    }
+
+    .footer_container {
+        display: block;
+
+    }
+
+    .footer_left {
+        border: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .footer_right {
+        width: 100%;
+        border-top: solid #E9E9E9 1px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .nav_left li {
+        padding: 5px;
+        font-size: 0.6rem;  
+      }
+
+      .date_main::before, .date_main::after {
+        width: 20%;
+    }
+
+    .form_grid {
+        display: block;
+
+        input[type="submit"] {
+            padding: 10px 0;
+            width: 150px;    
+        }
+    }
+}

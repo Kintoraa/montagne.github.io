@@ -53,7 +53,8 @@ p {
 header {
   height: 85vh;
 }
-header .header_container {
+
+.header_container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,14 +63,14 @@ header .header_container {
   height: 100%;
   color: white;
 }
-header .header_container h1 {
+.header_container h1 {
   font-size: 5rem;
   text-transform: uppercase;
 }
-header .header_container p {
+.header_container p {
   margin: 60px 0;
 }
-header .header_container i {
+.header_container i {
   border: solid 2px;
   padding: 20px;
   border-radius: 40px;
@@ -92,10 +93,11 @@ nav ul {
   padding-left: 0;
   width: 100%;
 }
-nav .nav_left {
+
+.nav_left {
   width: 40%;
 }
-nav .nav_left li {
+.nav_left li {
   display: flex;
   align-items: center;
   font-size: 0.7rem;
@@ -105,17 +107,18 @@ nav .nav_left li {
   padding: 0 10px;
   transition: 1s;
 }
-nav .nav_left li:hover {
+.nav_left li:hover {
   background: #E9E9E9;
 }
-nav .nav_right {
+
+.nav_right {
   width: 20%;
   justify-content: space-around;
 }
-nav .nav_right li {
+.nav_right li {
   transition: 0.5s;
 }
-nav .nav_right li:hover {
+.nav_right li:hover {
   font-size: 1.4rem;
 }
 
@@ -126,13 +129,14 @@ nav .nav_right li:hover {
   margin: 0 auto;
   padding: 50px;
 }
-.main .date_main {
+
+.date_main {
   position: relative;
 }
-.main .date_main p {
+.date_main p {
   font-size: 1.1rem;
 }
-.main .date_main::before {
+.date_main::before {
   content: "";
   position: absolute;
   background: #E9E9E9;
@@ -141,7 +145,7 @@ nav .nav_right li:hover {
   left: 5%;
   top: 50%;
 }
-.main .date_main::after {
+.date_main::after {
   content: "";
   position: absolute;
   background: #E9E9E9;
@@ -150,26 +154,28 @@ nav .nav_right li:hover {
   right: 5%;
   bottom: 50%;
 }
-.main .header_main {
+
+.header_main {
   margin: 40px;
 }
-.main .header_main h2 {
+.header_main h2 {
   font-size: 4rem;
   text-transform: uppercase;
 }
-.main .header_main p {
+.header_main p {
   max-width: 50%;
   margin: 30px auto;
   letter-spacing: 1px;
   font-style: italic;
 }
-.main .main_img {
+
+.main_img {
   margin: 0 auto;
   max-width: 1000px;
   margin-bottom: 40px;
 }
-.main .main_img img {
-  width: 100%;
+.main_img img {
+  width: 95%;
 }
 
 .article {
@@ -190,7 +196,8 @@ nav .nav_right li:hover {
 }
 
 .article_left, .article_right {
-  max-width: 50%;
+  width: 50%;
+  margin: 0 auto;
   padding: 50px 0;
   height: 860px;
 }
@@ -220,67 +227,73 @@ footer label, footer h6 {
   font-weight: 700;
   font-size: 0.8rem;
 }
-footer .footer_container {
+
+.footer_container {
   display: flex;
   align-items: center;
   background: white;
   margin-top: 40px;
 }
-footer .footer_left, footer .footer_right {
+
+.footer_left, .footer_right {
   width: 50%;
+  height: 675px;
 }
-footer .footer_left {
+
+.footer_left {
   padding: 50px;
 }
-footer .form_grid {
+
+.form_grid {
   display: grid;
   grid-template-areas: "na na" "em  em" "area area" "but void";
   gap: 30px;
   text-align: left;
   align-items: center;
 }
-footer .form_grid .name {
+.form_grid .name {
   grid-area: na;
 }
-footer .form_grid .email {
+.form_grid .email {
   grid-area: em;
 }
-footer .form_grid .textarea {
+.form_grid .textarea {
   grid-area: area;
 }
-footer .form_grid .buttons {
+.form_grid .buttons {
   grid-area: but;
   justify-content: center;
   color: #696969;
-  width: 200px;
 }
-footer .form_grid input, footer .form_grid textarea {
+.form_grid input[type=text], .form_grid textarea {
   border-radius: 5px;
-  border: solid 1px #696969;
+  border: solid 1px #E9E9E9;
   background: white;
 }
-footer .form_grid input[type=text] {
+.form_grid input[type=text] {
   width: 100%;
   margin-top: 20px;
   height: 50px;
 }
-footer .form_grid textarea {
+.form_grid input[type=submit] {
+  padding: 10px 0;
+  width: 200px;
+}
+.form_grid textarea {
   width: 100%;
   resize: none;
   height: 200px;
   margin: 20px auto;
 }
-footer .footer_right {
+
+.footer_right {
   display: flex;
   flex-direction: column;
 }
-footer .footer_right h6:first-child {
-  margin-bottom: 20px;
-}
-footer .footer_right div:nth-child(4) {
+.footer_right div:nth-child(4) {
   border-bottom: none;
 }
-footer .footer_right .footer_right_container {
+.footer_right .footer_right_container {
   display: flex;
   align-items: center;
   height: 165px;
@@ -288,27 +301,104 @@ footer .footer_right .footer_right_container {
   padding: 20px 20px 20px 40px;
   justify-content: flex-start;
 }
-footer .footer_right .footer_right_container div {
+.footer_right .footer_right_container #adress {
+  margin-bottom: 20px;
+}
+.footer_right .footer_right_container div {
   width: 50%;
   margin: 0 auto;
   text-align: left;
 }
-footer .footer_right .footer_right_container div p {
+.footer_right .footer_right_container div p {
   font-size: 0.9rem;
   line-height: 25px;
   font-weight: 500;
   color: rgba(105, 105, 105, 0.7803921569);
 }
-footer .footer_right .footer_right_container ul {
+.footer_right .footer_right_container ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   padding: 0;
 }
-footer .footer_right .footer_right_container ul li {
+.footer_right .footer_right_container ul li {
   border: solid #E9E9E9 1px;
   padding: 10px;
   border-radius: 30px;
   color: black;
+}
+
+@media screen and (max-width: 1300px) {
+  .header_main p {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 70px;
+  }
+  .date_main::before, .date_main::after {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 710px) {
+  body {
+    padding: 50px;
+  }
+  .header_container h1 {
+    font-size: 2.5rem;
+  }
+  .nav_left {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .nav_left li {
+    padding: 0 35px;
+  }
+  .nav_right {
+    display: none;
+  }
+  .main {
+    padding: 20px;
+    height: 1100px;
+  }
+  .header_main h2 {
+    font-size: 2rem;
+  }
+  .article {
+    display: block;
+  }
+  .article_left, .article_right {
+    width: 100%;
+  }
+  .footer_container {
+    display: block;
+  }
+  .footer_left {
+    border: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .footer_right {
+    width: 100%;
+    border-top: solid #E9E9E9 1px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .nav_left li {
+    padding: 5px;
+    font-size: 0.6rem;
+  }
+  .date_main::before, .date_main::after {
+    width: 20%;
+  }
+  .form_grid {
+    display: block;
+  }
+  .form_grid input[type=submit] {
+    padding: 10px 0;
+    width: 150px;
+  }
 }/*# sourceMappingURL=index.css.map */

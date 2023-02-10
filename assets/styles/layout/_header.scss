@@ -1,6 +1,7 @@
 header {
     height: 85vh;
 
+}
     .header_container {
        @include center;
        justify-content: center;
@@ -27,4 +28,3 @@ header {
         
        }
     }
-}
