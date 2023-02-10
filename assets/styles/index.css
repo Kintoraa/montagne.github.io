@@ -52,6 +52,7 @@ p {
 
 header {
   height: 85vh;
+  padding: 20px;
 }
 
 .header_container {
@@ -336,6 +337,10 @@ footer label, footer h6 {
   }
 }
 @media screen and (max-width: 1000px) {
+  header {
+    height: auto;
+    padding-bottom: 50px;
+  }
   body {
     padding: 70px;
   }
