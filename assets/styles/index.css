@@ -340,7 +340,6 @@ footer label, footer h6 {
 @media screen and (max-width: 1000px) {
   header {
     height: auto;
-    padding-bottom: 50px;
   }
   body {
     padding: 70px;
@@ -368,7 +367,7 @@ footer label, footer h6 {
   }
   .main {
     padding: 20px;
-    height: 1100px;
+    height: 1000px;
   }
   .header_main h2 {
     font-size: 2rem;
@@ -393,6 +392,9 @@ footer label, footer h6 {
   }
 }
 @media screen and (max-width: 470px) {
+  .main {
+    height: 1100px;
+  }
   .nav_left li {
     padding: 5px;
     font-size: 0.6rem;
