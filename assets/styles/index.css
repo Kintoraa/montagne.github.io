@@ -16,6 +16,24 @@ body {
   text-align: center;
   padding: 70px 150px 150px 150px;
   background: url(../image/bg.jpg) center/cover fixed;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(49, 47, 47);
+  animation: animBefore 1.5s ease forwards;
+  animation-delay: 0.15s;
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
 }
 
 ul {
@@ -52,7 +70,7 @@ p {
 }
 
 header {
-  height: 85vh;
+  height: 100vh;
   padding: 20px;
 }
 
@@ -62,8 +80,16 @@ header {
   justify-content: center;
   max-width: 1500px;
   margin: 0 auto;
-  height: 100%;
   color: white;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: headerAnim 1.5s forwards;
+}
+@keyframes headerAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .header_container h1 {
   font-size: 5rem;
@@ -100,6 +126,10 @@ nav ul {
 .nav_left {
   width: 40%;
 }
+.nav_left:hover li:not(:hover) {
+  background: none;
+  color: white;
+}
 .nav_left li {
   display: flex;
   align-items: center;
@@ -109,6 +139,10 @@ nav ul {
   height: 100%;
   padding: 0 10px;
   transition: 1s;
+}
+.nav_left li:first-child {
+  background: #E9E9E9;
+  color: black;
 }
 .nav_left li:hover {
   background: #E9E9E9;
